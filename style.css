@@ -104,6 +104,7 @@
     /* gap: 10px; */
     /* margin-top: 5px; */
     /* border: 2px solid black; */
+    /* margin: 0 auto; */
   }
 
   body{
@@ -162,7 +163,9 @@
     /* margin-left: 50%; */
     /* margin-right: 50%; */
     padding-top: 15px;
-    margin-left: 125px;
+    /* margin-left: 160px; */
+    margin: 0 auto;
+    justify-content: center;
   }
 
   .profile_pic span{
@@ -234,4 +237,8 @@
   .via img{
     width: 5%;
     margin-right: 5px;
+  }
+
+  .paytm_info{
+    justify-content: center;
   }
