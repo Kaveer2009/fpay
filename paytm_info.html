@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paytm</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/unnamed.png" type="image/x-icon">
+</head>
+<body>
+    <input id="p_name" type="text" required placeholder="Person Name">
+    <br>
+    <input id="amount" type="number" required placeholder="Amount">
+    <br>
+    <button type="submit" onclick="next()">Next</button>
+    <audio id="sound1" src="paytm_payment_tune.mp3" preload="auto"></audio>
+
+
+    <script src="paytm.js"></script>
+    <audio id="sfx"><source src="paytm_payment_tune.mp3"></audio>
+            <!-- <button onclick="playsound()" id="button">Play a sound!</button> -->
+            <script>
+                function playsound() {
+    
+                    var sfx = document.getElementById("sfx");
+                    sfx.autoplay = 'true';
+                sfx.load();}
+            </script>
+</body>
+</html>

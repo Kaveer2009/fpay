@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <style>
+        body{
+            /* margin: 0; */
+        }
+    </style>
+    <!-- <audio id="sound1" src="yoursound.mp3" preload="auto"></audio> -->
+    <div class="nav">
+        <ul onclick="back()" class="nav_item">
+            <i class="fa-solid fa-arrow-left back_logo"></i>
+        </ul>
+        <ul class="nav_item">
+            <img class="paytm_img" src="images/option img/2560px-Paytm_Logo_(standalone).svg.png" alt="LOading">
+        </ul>
+        <ul class="nav_item">
+            <div class="share">
+                <i class="fa-brands fa-whatsapp"></i>
+                <!-- <br> -->
+                <span>Share</span>
+            </div>
+        </ul>
+    </div>
+
+
+
+    <div class="info_bg">
+        <div class="profile_pic">
+            <!-- <span><i class="fa-solid fa-user"></i></span> -->
+            <span id="pro_t"></span>
+        </div>
+        <div class="name" id="name"></div>
+        <span class="via"><img src="images/paytm-wallet.png" alt="Loading..."> Paytm Wallet</span>
+        <div class="amount" id="amount1">
+            <div><b></b> <img src="images/icons8-verified-account.gif" alt="Loading..."></div>
+            <!-- <div class="tenor-gif-embed gif" data-postid="26220918" data-share-method="host" data-aspect-ratio="1" data-width="5%"><a href="https://tenor.com/view/green-gif-26220918">Green Sticker</a>from <a href="https://tenor.com/search/green-stickers">Green Stickers</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script> -->
+        </div>
+        <div class="success">PAYMENT SUCCESFUL</div>
+        <div id="date"></div>
+        <div id="ref"></div>
+        <div class="det">Payment Details</div>
+        <a href="paytm_info.html" class="pa">Pay Again</a>
+    </div>
+    <audio src="paytm_payment_tune.mp3" id="my_audio" loop="loop" autoplay="autoplay"></audio>
+    <script src="paytm.js"></script>
+    <script type="text/javascript">
+        window.onload=function(){
+            document.getElementById("my_audio").play();
+            for (let i = 1; i <= 5; i++) {
+    setTimeout(() =>  document.getElementById("my_audio").pause(), 3000);
+}
+          }
+        </script>
+</body>
+</html>
