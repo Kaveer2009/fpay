@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="jumbotron">
+        <center>
+            <div class="tick">
+                <i class="fa-solid fa-check"></i>
+            </div>
+            <span class="suc">Transaction Successful</span>
+            <br>
+            
+            <span id="date"></span>
+        </center>
+    </div>
+    <div class="info">
+        <div id="transaction_id" class="cont">
+            <span class="s_1">Transaction ID</span>
+            <div class="t_id_cont">
+                <div id="t_id">
+
+                </div>
+                <span class="copy">COPY</span>
+            </div>
+        </div>
+        <hr>
+        <div class="cont">
+            <span class="s_1">Bill Paid</span>
+            <div class="t_id_cont cont2">
+                <div id="p_name">
+
+                </div>
+                <div id="amount">
+                    20000
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="cont">
+            <span class="s_1">Bill Number</span>
+            <div class="t_id_cont">
+                <div id="b_no">
+
+                </div>
+                
+            </div>
+        </div>
+        <hr>
+        <div class="help">
+            <span class="s_2">Need Help?</span>
+            <br>
+            <div class="fake_b2">
+                <!-- <center> -->
+                    <span class="b2_1"><i class="fa-sharp fa-solid fa-circle-question"></i> Read FAQs</span>
+                <span class="b2_1"><i class="fa-solid fa-phone"></i> Call me back</span>
+                <!-- </center> -->
+            </div>
+        </div>
+        
+        <div class="cont_f">
+            <!-- <hr> -->
+            <center>
+                
+                <span onclick="window.location = 'phonepe_info.html';">GO TO HOME</span>
+                
+            </center>
+        </div>
+    </div>
+
+    
+
+
+
+
+
+
+
+    <style>
+        body{
+            margin: 0;
+        }
+        
+        
+    </style>
+
+
+
+
+    <audio src="Phonepe Transaction - Sound Effect.mp3" id="my_audio" loop="loop" autoplay="autoplay"></audio>
+    <!-- <script src="paytm.js"></script> -->
+    <script src="phonepe.js"></script>
+    <script type="text/javascript">
+        window.onload=function(){
+            document.getElementById("my_audio").play();
+            for (let i = 1; i <= 5; i++) {
+    setTimeout(() =>  document.getElementById("my_audio").pause(), 3000);
+}
+          }
+        </script>
+</body>
+</html>

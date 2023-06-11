@@ -242,3 +242,92 @@
   .paytm_info{
     justify-content: center;
   }
+
+  
+
+  .jumbotron{
+    background-color: #5dab47;
+    color: white;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    
+  }
+
+  .tick{
+    border: white solid 2px;
+    border-radius: 20px;
+    width: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 30px;
+  }
+
+  .suc{
+    margin-bottom: 20px;
+  }
+
+  .s_1{
+    color: #6b7073;
+    font-size: 13px;
+  }
+
+  #transaction_id .t_id_cont{
+    display: flex;
+    margin-top: 7px;
+  }
+
+  .copy{
+    margin-left: auto;
+    margin-right: auto;
+    color: #7f52c1;
+    font-size: 12px;
+    font-weight: 800;
+  }
+
+  .cont{
+    padding-top: 7px;
+    padding-left: 10px;
+
+  }
+  .cont2{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 25px;
+    
+  }
+
+
+  .b2_1{
+    color: #7f52c1;
+    padding: 20px;
+    
+  }
+
+  .fake_b2{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  }
+  
+  .s_2{
+    padding: 20px;
+  }
+
+  .cont_f{
+    color: #7f52c1;
+    /* position: relative; */
+    
+  }
+
+  .cont_f span{
+    border-top: black 1px solid;
+    padding-top: 20px;
+    position: absolute;
+    margin-bottom:  20px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  }
