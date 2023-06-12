@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <style>
+        #tick{
+            color: #3771e0;
+            font-size: 70px;
+            margin-top: 140px;
+            margin-bottom: 60px;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #amount{
+            font-size: 30px;
+        }
+
+        #amount, #p_name{
+            color: #373a3e;
+        }
+        #s3{
+            margin-top: 100px;
+        }
+        #s4 div button{
+            border-radius: 20px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left: 15px;
+            padding-right: 15px;
+            border: 1px solid #e8e8ea;
+            background-color: white;
+            color: #3771e0;
+            margin-top: 20px;
+            
+        }
+        #s4 div button:hover{
+            background-color: #3771e0;
+            transition: 0.25s;
+            color: white;
+        }
+
+        #s4{
+            position: relative;
+            height: 100px;
+            justify-content: center;
+            display: flex;
+            align-items: flex-end;
+        }
+
+        #s4 div{
+            position: absolute;
+            bottom: 0;
+            transform: translate(0, 50%);
+        }
+
+        #s4 span{
+            margin-bottom: 20px;
+            color: #535658;
+        }
+        
+    </style>
+
+
+    
+    <center>
+        <i id="tick" class="fa-sharp fa-solid fa-circle-check"></i>
+    
+    <div>
+        <span id="amount">
+
+        </span>
+        <br>
+        <br>
+        <span id="p_name">
+
+        </span>
+    </div>
+    <div id="s3">
+        
+    </div>
+    <div id="s4">
+        <span id="date">
+
+        </span>
+        <div>
+            <button onclick="window.location = 'google_pay_info.html'">Got it</button>
+        </div>
+    </div>
+    </center>
+    <script src="google_pay.js"></script>
+
+    <audio src="Google Pay - Transaction Sound.mp3" id="my_audio" loop="loop" autoplay="autoplay"></audio>
+    <script>
+         window.onload=function(){
+            document.getElementById("my_audio").play();
+            for (let i = 1; i <= 5; i++) {
+    setTimeout(() =>  document.getElementById("my_audio").pause(), 1000);
+}
+          }
+    </script>
+</body>
+</html>
